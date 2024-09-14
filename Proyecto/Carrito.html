@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de Compras</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="login.html">Login</a>
+        <a href="register.html">Registro</a>
+        <a href="category1.html">Categoría 1</a>
+        <a href="category2.html">Categoría 2</a>
+        <a href="category3.html">Categoría 3</a>
+        <a href="#">Logout</a>
+        <img src="Logo.png" alt="Logo de la tienda" id="logo">
+    </nav>
+
+    <div class="cart-container">
+        <h1>Carrito de Compras</h1>
+        <table class="cart-table">
+            <thead>
+                <tr>
+                    <th>Producto</th>
+                    <th>Precio</th>
+                    <th>Cantidad</th>
+                    <th>Total</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="product-name">Nombre del Producto 1</td>
+                    <td class="product-price">$29.99</td>
+                    <td class="product-quantity">
+                        <input type="number" value="1" min="1" class="quantity-input">
+                    </td>
+                    <td class="product-total">$29.99</td>
+                    <td class="product-actions">
+                        <button class="remove-button">Eliminar</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="product-name">Nombre del Producto 2</td>
+                    <td class="product-price">$49.99</td>
+                    <td class="product-quantity">
+                        <input type="number" value="2" min="1" class="quantity-input">
+                    </td>
+                    <td class="product-total">$99.98</td>
+                    <td class="product-actions">
+                        <button class="remove-button">Eliminar</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="cart-summary">
+            <h2>Total: <span id="cart-total">$129.97</span></h2>
+            <button class="checkout-button">Finalizar Compra</button>
+        </div>
+    </div>
+</body>
+</html>
